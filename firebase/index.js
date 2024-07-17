@@ -15,8 +15,6 @@ const serviceAccount = {
   universe_domain: process.env.UNIVERSE_DOMAIN
 };
 
-console.log(serviceAccount);
-
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
